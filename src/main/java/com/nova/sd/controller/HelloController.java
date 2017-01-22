@@ -49,7 +49,7 @@ public class HelloController {
 
 
     @RequestMapping(value = "/paramTest",produces="application/json")
-    public String jsonParamTest1(@RequestBody List<RequestInfo> requestInfos) {
+    public String jsonParamTest(@RequestBody List<RequestInfo> requestInfos) {
 
         String jsonString = JSON.toJSONString(requestInfos.get(0));
 
